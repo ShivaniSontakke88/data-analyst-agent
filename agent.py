@@ -39,7 +39,7 @@ def call_model(**kwargs):
         print(f"    (Gemini replied in {time.perf_counter() - t0:.1f}s)")
         return reply
 
-MODEL = "gemini-3.8-flash"
+MODEL = "gemini-3-flash-preview"
 MAX_STEPS = 10   # safety limit so the agent can't loop forever
 
 SYSTEM_PROMPT = """You are a careful data analyst working with an ecommerce dataset.
